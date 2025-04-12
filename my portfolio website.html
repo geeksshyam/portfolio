@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background-color: #f4f4f9;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #6200ea;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      background: #6200ea;
+    }
+    nav ul li {
+      margin: 0 20px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px;
+      display: block;
+    }
+    nav ul li a:hover {
+      background-color: #da3203;
+      color: black;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      color: #000000;
+      margin-bottom: 20px;
+    }
+    footer {
+      background-color: #6900ea;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Portfolio</h1>
+    <p>BCA Student | Tech Enthusiast | Future Developer</p>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#academics">Academics</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="home">
+    <h2>Home</h2>
+    <p>Welcome to my portfolio website. I am a BCA student passionate about learning new technologies and building software solutions. Explore my site to learn more about me and my journey.</p>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hi, I'm Madhav Shyam currently pursuing a Bachelor's in Computer Applications (BCA) from GL bajaj institute of managment. I'm enthusiastic about web development, programming. I enjoy solving problems and continuously improving my skills.</p>
+  </section>
+
+  <section id="academics">
+    <h2>Academics</h2>
+    <ul>
+      <li><strong>College:</strong> GL Bajaj Institute Of Management</li>
+      <li><strong>Course:</strong> Bachelor of Computer Applications (BCA)</li>
+      <li><strong>Year:</strong> 1st Year</li>
+      <li><strong>Subjects of Interest:</strong> Data Structures, Web Development, Java Programming</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <ul>
+      <li><strong>HTML</strong></li>
+      <li><strong>CSS</strong></li>
+      <li><strong>JAVA SCRIPT</strong></li>
+      <li><strong>C/C++</strong></li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: madhavshyam04@gmail.com</p>
+    <p>Phone: +91 9119785871</p>
+    <p>LinkedIn:<a href="https://www.linkedin.com/in/madhav-shyam-2a620732b/">My LinkedIn Profile</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 My Portfolio | Designed with passion</p>
+  </footer>
+
+  <script>
+    // Simple smooth scroll behavior
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        target.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>
